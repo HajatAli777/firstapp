@@ -13,8 +13,9 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
+          child: Column( 
             children: [
+              
               const SizedBox(height: 10),
               const Align(
                 alignment: Alignment.centerRight,
@@ -47,13 +48,13 @@ class OnboardingScreen extends StatelessWidget {
                     color: Hcolours.darkGrey,
                     fontSize: Hsizes.fontsizeMd,
                   ),
-                ),
+                ), 
               ),
               const SizedBox(height: 230
               ),
               Container(
                 width: 350,
-                height: 40,
+                 height: 40,
                 decoration: BoxDecoration(
                   color: Hcolours.primary,
                   borderRadius: BorderRadius.circular(10),
