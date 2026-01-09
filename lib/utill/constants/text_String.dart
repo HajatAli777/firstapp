@@ -14,7 +14,4 @@ class Htext{
     
   static const String homeAppbartitle = "Good Day For Shopping";
   static const String homeAppbarubtitle = "Ali";
-  
-
-
 }
