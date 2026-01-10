@@ -1,5 +1,5 @@
 name: firstapp
-description: "A new Flutter project."
+description: A new Flutter project.
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -7,22 +7,33 @@ version: 1.0.0+1
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
+#...........package info...........
 dependencies:
   flutter:
     sdk: flutter
 
+  # utilities packages
   cupertino_icons: ^1.0.8
   get: ^4.6.6
-  #.....................utilities..........................
-  smooth_page_indicator: ^1.1.0
+  flutter_native_splash: ^2.4.7
+  logger: ^2.6.2
+  url_launcher: ^6.3.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
   flutter_lints: ^5.0.0
 
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/animations/
+    - assets/splashlogo/
+
+# splash screen configuration
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splashlogo/splash.png
+  android: true
+  ios: true
